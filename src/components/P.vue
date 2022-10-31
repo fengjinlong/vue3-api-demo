@@ -6,6 +6,7 @@
   <c-pv />
   <c-vm v-model="modleVal" />
   <div>parent--{{ modleVal }}</div>
+  <async-parent />
 </template>
 <script setup>
 import { ref, provide } from "vue";
@@ -14,6 +15,7 @@ import cProps from "./c-props.vue";
 import cEmit from "./c-emit.vue";
 import cPv from "./c-pv.vue";
 import cVm from "./c-vm.vue";
+import asyncParent from "./async-parent.vue";
 provide("provide-data", "provide-data");
 // const emits = defineEmits(["add"]);
 // const props = defineProps({
